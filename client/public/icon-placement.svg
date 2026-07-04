@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 60" fill="none" stroke="#1a1a2e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <!-- left arm -->
+  <path d="M4 42 L28 28 L40 32"/>
+  <!-- right arm -->
+  <path d="M86 42 L62 28 L50 32"/>
+  <!-- clasped hands center -->
+  <path d="M40 32 C44 30 46 30 50 32" stroke="#1a1a2e" stroke-width="5"/>
+  <!-- fingers left -->
+  <path d="M28 28 L32 20 M34 26 L36 18 M38 28 L40 20"/>
+  <!-- fingers right -->
+  <path d="M62 28 L58 20 M56 26 L54 18 M52 28 L50 20"/>
+</svg>

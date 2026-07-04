@@ -1,0 +1,112 @@
+.rc__body { padding: 48px 24px 96px; max-width: 880px; margin: 0 auto; }
+.rc__title {
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.rc__quote {
+  text-align: center;
+  font-weight: 600;
+  color: var(--navy-900);
+  max-width: 640px;
+  margin: 0 auto 28px;
+  font-size: 1.02rem;
+}
+.rc__intro { margin-bottom: 48px; font-size: 0.94rem; }
+
+.rc__list {
+  list-style: none;
+  margin: 0 0 48px;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.rc__list li {
+  position: relative;
+  padding: 14px 18px 14px 36px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 0.92rem;
+  color: var(--ink-900);
+}
+.rc__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--navy-900);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.rc__list--problems {
+  background: #f1f0ee;
+  border-radius: 8px;
+  padding: 24px 28px;
+  gap: 10px;
+}
+.rc__list--problems li {
+  background: transparent;
+  border: none;
+  padding: 4px 0 4px 24px;
+}
+.rc__list--problems li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--gold-500);
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.rc__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 56px;
+}
+.rc__card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px 24px;
+}
+.rc__card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.rc__card-num {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--navy-900);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rc__card h3 { font-size: 0.96rem; color: var(--navy-900); }
+.rc__card p { font-size: 0.88rem; }
+
+.rc__cta {
+  text-align: center;
+  background: var(--gray-bg);
+  border-radius: var(--radius);
+  padding: 40px 24px;
+}
+.rc__cta-title {
+  font-weight: 700;
+  color: var(--navy-900);
+  margin-bottom: 16px;
+}
+.rc__cta p { margin-bottom: 22px; }
+
+@media (max-width: 700px) {
+  .rc__grid { grid-template-columns: 1fr; }
+}

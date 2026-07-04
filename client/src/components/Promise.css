@@ -1,0 +1,18 @@
+.promise {
+  background: var(--navy-700);
+  padding: 130px 0;
+}
+.promise__content { max-width: 860px; margin: 0 auto; text-align: center; }
+.promise__headline {
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(1.3rem, 2.8vw, 1.7rem);
+  line-height: 1.4;
+  margin-bottom: 28px;
+}
+.promise__body {
+  color: rgba(255,255,255,0.9);
+  font-size: 0.98rem;
+  font-style: italic;
+  line-height: 1.85;
+}

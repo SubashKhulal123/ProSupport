@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 72" fill="#1a1a2e">
+  <!-- roof / pediment -->
+  <polygon points="40,4 76,22 4,22"/>
+  <!-- columns -->
+  <rect x="12" y="24" width="8" height="36"/>
+  <rect x="24" y="24" width="8" height="36"/>
+  <rect x="36" y="24" width="8" height="36"/>
+  <rect x="48" y="24" width="8" height="36"/>
+  <rect x="60" y="24" width="8" height="36"/>
+  <!-- base -->
+  <rect x="4" y="60" width="72" height="8"/>
+</svg>

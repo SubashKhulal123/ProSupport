@@ -1,0 +1,82 @@
+:root {
+  /* ── EXACT COLORS FROM prosupport1.com ── */
+
+  /* Primary navy — headings, card bars, section underlines, tab titles */
+  --navy-900: #1e2f5e;
+  --navy-800: #1a2750;
+  --navy-700: #2147a8;   /* royal blue — Promise block background */
+
+  /* Amber/orange — "詳しくはコチラ" service buttons */
+  --gold-500: #c8860a;
+  --gold-400: #d4920e;
+
+  /* Backgrounds */
+  --body-bg:   #ffffff;   /* pure white — all main page sections */
+  --footer-bg: #ece9e1;  /* warm beige — footer */
+  --gray-bg:   #f2f1ef;  /* light neutral gray — concerns box */
+  --cream-50:  #ffffff;  /* alias kept for compatibility */
+
+  /* Text */
+  --ink-900: #333333;    /* primary body text */
+  --ink-500: #666666;    /* secondary / muted text */
+
+  /* Borders & dividers */
+  --line:   #e0e0e0;
+  --radius: 8px;
+  --max-width: 1180px;
+
+  /* Fonts — Noto Sans JP (same as real site WordPress theme) */
+  --font-display: "Noto Serif JP", "游明朝", YuMincho, "Hiragino Mincho ProN", serif;
+  --font-body: "Noto Sans JP", "游ゴシック体", YuGothic, "Yu Gothic Medium",
+               "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--font-body);
+  color: var(--ink-900);
+  background: var(--body-bg);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button { font-family: inherit; cursor: pointer; }
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-body);
+  color: var(--navy-900);
+  margin: 0;
+  line-height: 1.4;
+}
+p { line-height: 1.8; color: var(--ink-500); margin: 0; }
+
+/* Amber pill button — matches "詳しくはコチラ" on real site */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  border: 1px solid transparent;
+  transition: opacity 0.15s ease;
+}
+.btn-primary { background: var(--gold-500); color: #fff; }
+.btn-primary:hover { opacity: 0.85; }
+.btn-outline { background: transparent; border-color: rgba(255,255,255,0.4); color: #fff; }
+.btn-outline:hover { background: rgba(255,255,255,0.08); }
+
+.section { padding: 80px 0; }
+.section-tight { padding: 48px 0; }
+
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+@media (max-width: 720px) { .section { padding: 52px 0; } }
