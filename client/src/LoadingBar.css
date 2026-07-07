@@ -1,0 +1,10 @@
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #c8860a;
+  z-index: 9999;
+  transition: width 0.4s ease, opacity 0.3s ease;
+  border-radius: 0 2px 2px 0;
+}

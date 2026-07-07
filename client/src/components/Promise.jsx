@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import { useLang } from "../LangContext.jsx";
 import "./Promise.css";
@@ -5,20 +7,25 @@ import "./Promise.css";
 export default function Promise() {
   const { lang } = useLang();
   const ja = lang === "ja";
+
   return (
     <section className="promise">
       <div className="container promise__content">
-  <h2 className="promise__headline">
-  {ja ? (
-    "スピードも多様性も、全部ProSupportにおまかせ！ トリリンガルスタッフが現場をサポートします。"
-  ) : (
-    <>
-      Leave speed and versatility to ProSupport! Our trilingual staff will
-      <br />
-      support you on-site.
-    </>
-  )}
-</h2>
+        <h2 className="promise__headline">
+          {ja ? (
+            <>
+              スピードも多様性も、全部ProSupportにおまかせ！<br />
+              トリリンガルスタッフが現場をサポートします。
+            </>
+          ) : (
+            <>
+              Leave speed and versatility to ProSupport! Our trilingual staff will
+              <br />
+              support you on-site.
+            </>
+          )}
+        </h2>
+
         <p className="promise__body">
           {ja ? (
             <>
@@ -26,20 +33,14 @@ export default function Promise() {
               また、人材管理・新人教育・指導・欠勤・退職までを一貫してサポート。派遣後も安心して職場の戦力となるよう、きめ細やかなアフターフォローを行います。
             </>
           ) : (
-           
-<>
-  Our trilingual staff will provide thorough instruction on work procedures in their native language,
-  <br />
-  English, and Japanese.
-  <br />
-  We also offer comprehensive support, from personnel management and new employee training to
-  <br />
-  guidance, absence management, and termination of employment. We provide meticulous after-sales
-  <br />
-  support to ensure that employees can confidently become valuable assets to their workplaces even
-  <br />
-  after being dispatched.
-</>
+            <>
+              Our trilingual staff will provide thorough instruction on work procedures in their native language, 
+              English, and Japanese.<br /><br />
+              We also offer comprehensive support, from personnel management and new employee training to 
+              guidance, absence management, and termination of employment. We provide meticulous after-sales 
+              support to ensure that employees can confidently become valuable assets to their workplaces even 
+              after being dispatched.
+            </>
           )}
         </p>
       </div>
