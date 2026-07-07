@@ -1,17 +1,12 @@
+
 .footer {
-  /* background: var(--footer-bg); */
+  position: relative;
   color: #000;
   padding: 200px 0 90px;
   text-align: center;
-    background: #ffffff;
+  background: #ffffff;
   transition: background-color 0.35s ease, box-shadow 0.35s ease;
 }
-
-/* .footer:hover {
-  background: #f8f8f8;
-  box-shadow: 0 -12px 35px rgba(0, 0, 0, 0.08);
-} */
-
 
 .footer:hover {
   background: #f3f3f3;
@@ -57,8 +52,7 @@
 .footer__links a {
   color: #000;
   text-decoration: none;
-  transition: color 0.3s ease,
-              transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer:hover .footer__links a {
@@ -85,4 +79,106 @@
 
 .footer:hover .footer__copy {
   color: #444;
+}
+
+/* ===========================
+   Back To Top Button
+=========================== */
+
+.footer__top-btn {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+
+  width: 60px;
+  height: 60px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: #444;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+  z-index: 1000;
+
+  /* Hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) scale(0.9);
+
+  transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease,
+    transform 0.35s ease,
+    background 0.35s ease,
+    color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Appears when scrolled */
+.footer__top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.footer__top-btn svg {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease;
+}
+
+.footer__top-btn span {
+  margin-top: 2px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.footer__top-btn:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.footer__top-btn:hover svg {
+  transform: translateY(-2px);
+}
+
+.footer__top-btn:active {
+  transform: scale(0.95);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+  .footer__top-btn {
+    width: 52px;
+    height: 52px;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .footer__top-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer__top-btn span {
+    font-size: 9px;
+  }
 }
