@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import api from "../api";
 import { useLang } from "../LangContext.jsx";
 import { useTitle } from "../useTitle.js";
 import "./Contact.css";
@@ -41,7 +41,7 @@ export default function Contact() {
     if (!agreed) { setStatus("error"); setErrorMsg(ja ? "プライバシーポリシーに同意してください。" : "Please agree to the privacy policy before sending."); return; }
     setStatus("sending"); setErrorMsg("");
     try {
-      await axios.post("/api/contact", form);
+      await api.post("/api/contact", form);
       setStatus("sent"); setForm(initial); setAgreed(false);
     } catch (err) {
       setStatus("error"); setErrorMsg(err?.response?.data?.error || (ja ? "エラーが発生しました。" : "Something went wrong. Please try again."));
