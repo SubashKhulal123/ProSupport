@@ -12,11 +12,26 @@ export default function Hero() {
       <img className="hero__media" src="/network-businessman.png" alt="" aria-hidden="true" />
       <div className="hero__overlay" />
       <div className="container hero__content">
-        <h1>
+        {/* <h1>
   {ja
     ? <>グローバル人材を、スピーディーに。<br />必要な人を、必要な場所へ。</>
     : <>Recruiting global talent quickly.<br />Putting the right people in the<br />right places.</>
   }
+</h1> */}
+
+<h1>
+  {ja ? (
+    <>
+      グローバル人材を、スピーディーに。<br />
+      必要な人を、必要な場所へ。
+    </>
+  ) : (
+    <>
+      Recruiting global talent quickly.<br />
+      Putting the right people in the<br />
+      right places.
+    </>
+  )}
 </h1>
       </div>
       <div className="hero__scroll">
