@@ -151,22 +151,14 @@
 
 }
 
-/* @media (max-width: 900px) {
-  .hero__content h1 { font-size: clamp(1.4rem, 4vw, 2.2rem); max-width: 90%; }
-} */
-
-/* @media (max-width: 480px) {
-  .hero__content h1 { font-size: clamp(1.2rem, 5vw, 1.8rem); }
-  .hero { min-height: 70vh; }
-} */
-
 @media (max-width: 480px) {
-  .hero__title--ja {
-    font-size: 1.2rem;
-    line-height: 1.5;
+  .hero__content {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
   }
 
-  .hero {
-    min-height: 70vh;
+  .hero__content h1 {
+    font-size: 1.45rem;
+    line-height: 1.5;
   }
 }
