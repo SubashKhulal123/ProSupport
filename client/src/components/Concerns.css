@@ -45,3 +45,8 @@
   height: 8px;
   background: var(--gold-500);
 }
+
+/* ── RESPONSIVE FIXES ── */
+@media (max-width: 480px) {
+  .concerns__list { padding: 18px 16px; }
+}

@@ -45,3 +45,9 @@
   .promise__headline { font-size: 0.95rem; line-height: 1.6; }
 }
 
+/* ── RESPONSIVE FIXES ── */
+@media (max-width: 960px) {
+  .promise__content { width: 100%; max-width: 100%; padding: 0 20px; }
+  .promise__headline { width: 100%; max-width: 100%; }
+  .promise__body { width: 100%; max-width: 100%; }
+}
