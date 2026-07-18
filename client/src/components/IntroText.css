@@ -27,8 +27,7 @@
   .intro-text__headline { font-size: 1.35rem; }
 }
 @media (max-width: 480px) {
-  .intro-text__headline { font-size: 1.05rem; letter-spacing: 0.01em; }
-    .intro-text__body {
+  .intro-text__body {
     font-size: 0.82rem;
     line-height: 1.8;
   }

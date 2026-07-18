@@ -10,16 +10,12 @@ export default function IntroText() {
       <div className="container">
       
 
-        <p className="intro-text__body">
+     <p className="intro-text__body">
   {ja ? (
     <>
-      <span style={{ whiteSpace: "nowrap" }}>
-        採用コスト・面接・手続きなど、外国人採用の"面倒"をすべてサポート。
-      </span>
+      採用コスト・面接・手続きなど、外国人採用の"面倒"をすべて<span style={{ whiteSpace: "nowrap" }}>サポート。</span>
       <br />
-      <span style={{ whiteSpace: "nowrap" }}>
-        企業様のニーズに合わせた人材をご紹介し、不安をしっかり解消します。
-      </span>
+      企業様のニーズに合わせた人材をご紹介し、<span style={{ whiteSpace: "nowrap" }}>不安をしっかり解消します。</span>
     </>
   ) : (
     <>
