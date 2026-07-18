@@ -32,3 +32,17 @@
     line-height: 1.8;
   }
 }
+
+/* Very small phones (Galaxy S8+, iPhone SE, iPhone 12 Pro) */
+@media (max-width: 390px) {
+  .intro-text .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .intro-text__body {
+    font-size: 0.72rem;
+    line-height: 1.75;
+    max-width: 100%;
+  }
+}
