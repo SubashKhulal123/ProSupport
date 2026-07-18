@@ -14,7 +14,8 @@ export default function Hero() {
       <div className="container hero__content">
         <h1>
   {ja
-    ? <>グローバル人材を、スピーディーに。<br />必要な人を、必要な場所へ。</>
+    // ? <>グローバル人材を、スピーディーに。<br />必要な人を、必要な場所へ。</>
+    ? <><span style={{ whiteSpace: "nowrap" }}> グローバル人材を、スピーディーに。</span><br /> 必要な人を、必要な場所へ。</>
     : <>Recruiting global talent quickly.<br />Putting the right people in the<br />right places.</>
   }
 </h1>
