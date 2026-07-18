@@ -46,3 +46,16 @@
     max-width: 100%;
   }
 }
+
+/* Galaxy S8+ and similar */
+@media (max-width: 360px) {
+  .intro-text .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .intro-text__body {
+    font-size: 0.68rem;
+    line-height: 1.7;
+  }
+}
