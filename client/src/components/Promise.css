@@ -34,3 +34,14 @@
     letter-spacing:.02em;
 }
 
+@media (max-width: 768px) {
+  .promise { padding-top: 56px; padding-bottom: 80px; }
+  .promise__headline { font-size: 1.05rem; }
+  .promise__body { font-size: 0.82rem; }
+}
+
+@media (max-width: 480px) {
+  .promise { padding-top: 44px; padding-bottom: 56px; }
+  .promise__headline { font-size: 0.95rem; line-height: 1.6; }
+}
+

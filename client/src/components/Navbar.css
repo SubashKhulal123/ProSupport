@@ -205,3 +205,12 @@
     padding: 12px 36px;
   }
 }
+
+
+@media (max-width: 480px) {
+  .nav__row { height: 80px; }
+  .nav__logo-box { height: 60px; width: 62px; }
+  .nav__links { top: 80px; }
+  .nav__toggle { right: 16px; }
+  .nav__brand { left: 16px; }
+}

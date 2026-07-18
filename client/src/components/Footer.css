@@ -182,3 +182,10 @@
     font-size: 9px;
   }
 }
+
+@media (max-width: 600px) {
+  .footer { padding: 56px 16px 32px; }
+  .footer__logo-box { width: 120px; height: 120px; margin-bottom: 28px; }
+  .footer__links { font-size: 0.75rem; gap: 8px 10px; }
+  .footer__divider { height: 10px; }
+}

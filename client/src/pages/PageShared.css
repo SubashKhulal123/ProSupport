@@ -192,3 +192,11 @@
 @media (max-width: 800px) {
   .detail-block { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 600px) {
+  .staffing__body { padding: 32px 16px 0; }
+  .rso__intro { padding: 32px 16px 0; }
+  .rso__steps { padding: 32px 16px 8px; }
+  .rso__step-media { max-width: 100%; }
+  .rso__closing { padding: 40px 16px 56px; }
+}

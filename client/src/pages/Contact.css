@@ -116,3 +116,8 @@
   .inquiry__table tr { display: block; padding: 12px 0; }
   .inquiry__required { margin-bottom: 6px; }
 }
+
+@media (max-width: 480px) {
+  .inquiry__body { padding: 32px 16px 64px; }
+  .inquiry__table th { white-space: normal; }
+}

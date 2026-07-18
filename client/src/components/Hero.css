@@ -140,3 +140,12 @@
     }
 
 }
+
+@media (max-width: 900px) {
+  .hero__content h1 { font-size: clamp(1.4rem, 4vw, 2.2rem); max-width: 90%; }
+}
+
+@media (max-width: 480px) {
+  .hero__content h1 { font-size: clamp(1.2rem, 5vw, 1.8rem); }
+  .hero { min-height: 70vh; }
+}
