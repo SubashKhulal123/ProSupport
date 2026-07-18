@@ -28,5 +28,8 @@
 }
 @media (max-width: 480px) {
   .intro-text__headline { font-size: 1.05rem; letter-spacing: 0.01em; }
-  .intro-text__body { font-size: 0.88rem; }
+    .intro-text__body {
+    font-size: 0.82rem;
+    line-height: 1.8;
+  }
 }
